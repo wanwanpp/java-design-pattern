@@ -1,4 +1,4 @@
-package com.cbf4life.享元模式;
+package com.wp.享元模式;
 
 import java.util.HashMap;
 import java.util.Map;
