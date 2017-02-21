@@ -1,12 +1,12 @@
 package com.wp.观察者模式;
 
 
-public interface Subject {
+public interface Observable {
     /**
-     * 注册观察者
+     * 添加观察者
      * @param observer
      */
-    public void registerObserver(Observer observer);
+    public void addObserver(Observer observer);
     
     /**
      * 删除观察者

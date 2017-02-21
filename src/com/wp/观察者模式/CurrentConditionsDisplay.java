@@ -1,15 +1,15 @@
 package com.wp.观察者模式;
 
-public class CurrentConditionsDisplay implements Observer,DisplayElement{
+public class CurrentConditionsDisplay implements Observer, DisplayElement {
     private float temperature;
     private float humidity;
-    private    Subject weatherData;
-    
-    public CurrentConditionsDisplay(Subject weatherData){
+    private Observable weatherData;
+
+    public CurrentConditionsDisplay(Observable weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);      //注册观察者
     }
-    
+
     public void update(float temp, float humidity, float pressure) {
         this.temperature = temp;
         this.humidity = humidity;
@@ -18,7 +18,7 @@ public class CurrentConditionsDisplay implements Observer,DisplayElement{
 
     @Override
     public void display() {
-        System.out.println("Current conditions:"+temperature+"F degrees and "+humidity+"% humidity");
+        System.out.println("Current conditions:" + temperature + "F degrees and " + humidity + "% humidity");
     }
 
 }

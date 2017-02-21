@@ -3,7 +3,7 @@ package com.wp.观察者模式;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WeatherData implements Subject{
+public class WeatherData implements Observable {
     private List<Observer> observers;
     private float tempterature;
     private float pressure;
@@ -22,7 +22,7 @@ public class WeatherData implements Subject{
     }
 
     @Override
-    public void registerObserver(Observer observer) {
+    public void addObserver(Observer observer) {
         observers.add(observer);
     }
 
