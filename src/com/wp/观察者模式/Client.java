@@ -1,6 +1,6 @@
 package com.wp.观察者模式;
 
-public class WeatherStation {
+public class Client {
 
     public static void main(String[] args) {
         WeatherData weatherData = new WeatherData();

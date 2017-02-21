@@ -18,7 +18,7 @@ public class HanFeiZi extends Observable {
     //韩非子开始娱乐了,古代人没啥娱乐，你能想到的就那么多
     public void haveFun() {
         System.out.println("韩非子:开始娱乐了...");
-        super.setChanged();
+        this.setChanged();
         this.notifyObservers("韩非子在娱乐");
     }
 }
