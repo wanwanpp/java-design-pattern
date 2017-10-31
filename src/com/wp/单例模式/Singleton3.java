@@ -23,7 +23,7 @@ public class Singleton3 {
      */
     public static Singleton3 getInstance(){
         if(uniqueInstance == null){
-            synchronized(Singleton.class){    //进入同步区域
+            synchronized(Singleton3.class){    //进入同步区域
                 if(uniqueInstance == null){     //在检查一次，如果为null，则创建
                     uniqueInstance  = new Singleton3();
                 }
